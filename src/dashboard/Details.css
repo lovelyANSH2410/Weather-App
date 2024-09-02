@@ -1,0 +1,28 @@
+.detail-list {
+    color: white;
+    margin: 80px;
+    display: flex;
+
+}
+
+.detail {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    padding: 12px;
+    background-color: rgba(0,0,0,0.3);
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.detail:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+

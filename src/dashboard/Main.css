@@ -1,0 +1,20 @@
+.main {
+  margin: 80px;
+}
+
+.city {
+  color: white;
+  font-size: 24px;
+}
+
+.temperature {
+  color: white;
+  font-size: 120px;
+  margin-top: -30px;
+}
+
+.cloud {
+    color: white;
+    font-size: 24px;
+    margin-top: -10px;
+}

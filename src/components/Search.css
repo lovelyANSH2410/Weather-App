@@ -1,0 +1,50 @@
+.search {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 20%;
+  margin-left: 20px;
+  border-radius: 40px;
+}
+
+.cities {
+  font-size: 34px;
+  color: white;
+}
+
+.input {
+
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+.city-list {
+  margin-top: 20px;
+  max-height: 700px;
+  overflow-y: auto;
+  list-style-type: none;
+  scrollbar-width: none;
+}
+
+.city-names {
+  color: aliceblue;
+  list-style: none;
+  padding: 12px 15px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.city-names:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
