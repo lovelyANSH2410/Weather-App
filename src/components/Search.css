@@ -16,12 +16,21 @@
 }
 
 .input {
-
+  width: 170px;
   padding: 10px 20px;
   margin-top: 20px;
   border-radius: 25px;
   background-color: black;
   border: 1px solid white;
+  color: white;
+}
+
+.search-btn {
+  margin-top: 20px;
+  margin-left: 15px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
   color: white;
 }
 

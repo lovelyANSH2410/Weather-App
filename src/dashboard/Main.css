@@ -8,9 +8,14 @@
 }
 
 .temperature {
+  display: flex;
   color: white;
   font-size: 120px;
   margin-top: -30px;
+}
+
+.weather-icon {
+  object-fit: contain;
 }
 
 .cloud {

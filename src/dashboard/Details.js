@@ -1,7 +1,12 @@
 import React from "react";
 import "./Details.css";
+import { useSelector } from "react-redux";
 
 const Details = () => {
+  const { humidity, real_feel, pressure, sunrise, wind_speed } = useSelector(
+    (store) => store.weather
+  );
+
   return (
     <div className="detail-list">
       <p className="detail">
@@ -13,7 +18,7 @@ const Details = () => {
         />
       </p>
       <p className="detail">
-        Humidity{" "}
+        Humidity - {humidity}
         <img
           className="img"
           src="https://cdn-icons-png.flaticon.com/512/9342/9342439.png"
@@ -21,7 +26,7 @@ const Details = () => {
         />
       </p>
       <p className="detail">
-        Real Feel{" "}
+        Real Feel - {real_feel}°
         <img
           className="img"
           src="https://images.vexels.com/media/users/3/240746/isolated/preview/2fb6bd2cc5c9c8772c19c09cfd0b6deb-cold-temperature-icon.png"
@@ -29,7 +34,7 @@ const Details = () => {
         />
       </p>
       <p className="detail">
-        East
+        Wind - {wind_speed}Km/h
         <img
           className="img"
           src="https://cdn-icons-png.flaticon.com/512/1476/1476732.png"
@@ -37,7 +42,7 @@ const Details = () => {
         />
       </p>
       <p className="detail">
-        Sunrise
+        Sunrise - {sunrise}
         <img
           className="img"
           src="https://cdn-icons-png.flaticon.com/512/1146/1146885.png"
@@ -45,7 +50,7 @@ const Details = () => {
         />
       </p>
       <p className="detail">
-        Pressure
+        Pressure - {pressure}
         <img
           className="img"
           src="https://cdn-icons-png.flaticon.com/512/1839/1839341.png"
