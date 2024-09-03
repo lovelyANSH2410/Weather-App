@@ -1,5 +1,36 @@
 .weather {
-    width: 80%;
+    width: 75%;
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 40px;
+}
+
+.error-title {
+    font-size: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+@media (max-width:1250px) {
+    .weather {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .error-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:465px) {
+    .weather {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .error-title {
+        font-size: 24px;
+    }
 }

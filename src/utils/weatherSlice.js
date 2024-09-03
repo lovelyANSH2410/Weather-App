@@ -14,6 +14,7 @@ const weatherSlice = createSlice({
     cloud_description: null,
     pressure: null,
     sunrise: null,
+    loading: false,
   },
   reducers: {
     setTemperature(state, action) {
@@ -49,6 +50,9 @@ const weatherSlice = createSlice({
     setSunrise(state, action) {
       state.sunrise = action.payload;
     },
+    setLoading(state, action) {
+      state.loading = action.payload;
+    },
     setWeatherData(state, action) {
       const {
         temperature,
@@ -62,6 +66,7 @@ const weatherSlice = createSlice({
         cloud_description,
         pressure,
         sunrise,
+        loading,
       } = action.payload;
 
       state.temperature = temperature;
@@ -75,6 +80,7 @@ const weatherSlice = createSlice({
       state.cloud_description = cloud_description;
       state.pressure = pressure;
       state.sunrise = sunrise;
+      state.loading = loading;
     },
   },
 });
@@ -92,6 +98,7 @@ export const {
   setPressure,
   setWeatherData,
   setSunrise,
+  setLoading,
 } = weatherSlice.actions;
 
 export default weatherSlice.reducer;

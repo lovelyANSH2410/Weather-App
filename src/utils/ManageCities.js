@@ -1,19 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Search.css";
-import { WEATHER_API_KEY } from "../utils/constants";
-import { setWeatherData } from "../utils/weatherSlice";
+import "./Modal.css";
 import { useDispatch, useSelector } from "react-redux";
+import { setWeatherData } from "./weatherSlice";
+import { WEATHER_API_KEY } from "./constants";
 
-const Search = () => {
+const ManageCities = ({ onClose }) => {
   const [cityList, setCityList] = useState([]);
   const { loading } = useSelector((store) => store.weather);
   const city = useRef(null);
   const ApiKey = WEATHER_API_KEY;
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    search("Delhi");
-  }, []);
   const search = async (cit) => {
     dispatch(setWeatherData({ loading: true }));
     const cityName = cit || city.current.value;
@@ -65,8 +62,13 @@ const Search = () => {
     fetchData();
   }, []);
 
+  const handleCityClick = (cityName) => {
+    search(cityName);
+    onClose();
+  };
+
   return (
-    <div className="search">
+    <div className="modal">
       <p className="cities">Manage Cities</p>
       <div className="flex">
         <input ref={city} className="input" placeholder="Enter location" />
@@ -77,7 +79,7 @@ const Search = () => {
       <ul className="city-list">
         {cityList?.map((city) => (
           <li
-            onClick={() => search(city.name)}
+            onClick={() => handleCityClick(city.name)}
             className="city-names"
             key={city.id}
           >
@@ -89,4 +91,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default ManageCities;

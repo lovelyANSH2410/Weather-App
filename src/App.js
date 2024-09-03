@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import "./App.css";
 import Body from "./components/Body";
 import mist from "./utils/images/mist.jpg";
-import rain from "./utils/images/rain.jpg";
+import rain from "./utils/images/shower_rain.jpg";
 import clear_sky from "./utils/images/clear_sky.jpg";
 import scatter_cloud from "./utils/images/scatter_cloud.jpg";
 import shower_rain from "./utils/images/shower_rain.jpg";
@@ -13,7 +13,7 @@ function App() {
   const { icon_code } = useSelector(
     (store) => store.weather
   );
-  let weather_bg = snow;
+  let weather_bg = null;
   const icon = icon_code?.slice(0, 2);
 
   switch (icon) {
@@ -45,13 +45,13 @@ function App() {
       weather_bg = mist;
       break;
     default:
-      weather_bg = rain;
+      weather_bg = scatter_cloud;
       break;
   }
 
   return (
     <div className="app">
-      <img className="h-screen w-full absolute" src={weather_bg} alt="img" />
+      <img className="h-screen w-full absolute background-img" src={weather_bg} alt="img" />
       <Body />
     </div>
   );

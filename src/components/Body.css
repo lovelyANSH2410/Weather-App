@@ -1,7 +1,17 @@
 .bg {
     display: flex;
-    position: relative;
     margin: 30px;
-    border-radius: 20px; 
+}
+
+@media (max-width:468px) {
+    .bg{
+        margin: 0px;
+    }
+}
+
+@media (max-width:768px) {
+    .bg{
+        margin: 20px;
+    }
 }
 

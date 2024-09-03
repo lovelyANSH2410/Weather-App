@@ -1,9 +1,49 @@
 .app {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   opacity: 100%;
-  filter: brightness(.7);
+  filter: brightness(0.9);
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .app {
+    background-size: contain;
+  }
+
+  .app background-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    filter: brightness(0.8);
+  }
+
+  .app background-img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }

@@ -13,7 +13,7 @@ const Details = () => {
       <p className="detail">
         UV{" "}
         <img
-          className="img"
+          className="image"
           src="https://img.icons8.com/?size=160&id=9eToT1eAIEII&format=png"
           alt="uv"
         />
@@ -21,7 +21,7 @@ const Details = () => {
       <p className="detail">
         Humidity - {humidity}%
         <img
-          className="img"
+          className="image"
           src="https://cdn-icons-png.flaticon.com/512/9342/9342439.png"
           alt="hum"
         />
@@ -29,7 +29,7 @@ const Details = () => {
       <p className="detail">
         Real Feel - {real_feel}°C
         <img
-          className="img"
+          className="image"
           src="https://images.vexels.com/media/users/3/240746/isolated/preview/2fb6bd2cc5c9c8772c19c09cfd0b6deb-cold-temperature-icon.png"
           alt="hum"
         />
@@ -37,7 +37,7 @@ const Details = () => {
       <p className="detail">
         Wind - {wind_speed}Km/h
         <img
-          className="img"
+          className="image"
           src="https://cdn-icons-png.flaticon.com/512/1476/1476732.png"
           alt="hum"
         />
@@ -45,7 +45,7 @@ const Details = () => {
       <p className="detail">
         Sunrise - {sunrise}
         <img
-          className="img"
+          className="image"
           src="https://cdn-icons-png.flaticon.com/512/1146/1146885.png"
           alt="hum"
         />
@@ -53,7 +53,7 @@ const Details = () => {
       <p className="detail">
         Pressure - {pressure}
         <img
-          className="img"
+          className="image"
           src="https://cdn-icons-png.flaticon.com/512/1839/1839341.png"
           alt="hum"
         />

@@ -1,0 +1,104 @@
+.modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    padding: 0px 0px;
+    border-radius: 40px;
+  }
+
+@media (max-width:375px) {
+    .modal {
+        height: 500px;
+    }
+}
+  
+  .cities {
+    font-size: 34px;
+    color: white;
+  }
+  
+  .input {
+    width: 170px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .search-btn {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .city-list {
+    margin-top: 20px;
+    max-height: 700px;
+    overflow-y: auto;
+    list-style-type: none;
+    scrollbar-width: none;
+  }
+  
+  .city-names {
+    color: aliceblue;
+    list-style: none;
+    padding: 12px 15px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+  
+  .city-names:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* utils/Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+@media (max-width:1250px) {
+    .modal-overlay {
+        display: flex;
+    }
+}
+  
+  .modal-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 30px;
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
