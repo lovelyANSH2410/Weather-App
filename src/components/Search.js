@@ -11,7 +11,7 @@ const Search = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    search("Deoria");
+    search("Delhi");
   }, []);
   const search = async (cit) => {
     const cityName = cit || city.current.value;

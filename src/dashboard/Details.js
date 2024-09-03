@@ -9,6 +9,7 @@ const Details = () => {
 
   return (
     <div className="detail-list">
+
       <p className="detail">
         UV{" "}
         <img
@@ -18,7 +19,7 @@ const Details = () => {
         />
       </p>
       <p className="detail">
-        Humidity - {humidity}
+        Humidity - {humidity}%
         <img
           className="img"
           src="https://cdn-icons-png.flaticon.com/512/9342/9342439.png"
@@ -26,7 +27,7 @@ const Details = () => {
         />
       </p>
       <p className="detail">
-        Real Feel - {real_feel}°
+        Real Feel - {real_feel}°C
         <img
           className="img"
           src="https://images.vexels.com/media/users/3/240746/isolated/preview/2fb6bd2cc5c9c8772c19c09cfd0b6deb-cold-temperature-icon.png"
